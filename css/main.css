@@ -1,0 +1,125 @@
+@import url(flip.css);
+@import url(font.css);
+
+body{
+	background-image: url(../img/Simps-background.jpg);
+    background-size: 100% 100%;
+	margin: 0;
+	font-family: 'Simpsonsfont';
+	color: #ead520;
+	text-shadow: rgb(0,0,0) 2px 1px 2px;
+}
+
+h1{
+	text-align: center;
+    font-size: 5rem;
+    letter-spacing: 5px;
+    text-shadow: rgb(0,0,0) 5px 1px 2px;
+}
+
+h2, h3{
+	text-align: center;
+}
+
+.main_wrapper{
+	margin:0 auto;
+	max-width: 1400px;	
+}
+
+.startBtn{
+    background-color: #3cb3f7;
+    font-family: 'Simpsonsfont';
+    width: 250px;
+    height: 70px;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #ead520;
+    font-size: 2.4rem;
+    font-weight: bold;
+	margin: 0 auto;
+	display: block;	
+	text-shadow: 3px 0px black;
+}
+
+.game_property{
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+}
+
+.game_info, .game_select{
+	background: rgba(61, 255, 191, 0.5);
+	width: 18%;
+	margin: 5px;
+	border-radius: 30px;
+	border: 2px solid rgba(61, 255, 191, 1);
+	padding: 10px;
+	display: inline-block;
+	flex: 1;
+}
+
+.game_frame{
+	flex:3;
+}
+
+.game_info{
+	letter-spacing: 3px;
+	font-size: 0.9rem;
+}
+.game_select{
+	letter-spacing: 2px;
+}
+
+.skin_select{
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.game_select img{
+	box-sizing: border-box;
+	margin: 10px;
+	cursor: pointer;
+}
+.game_select img:hover{
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+.cardSkin{
+    height: 100px;
+    width: 60px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.card_container{
+	width: 80%;
+	min-height: 500px;
+	background: yellow;
+}
+
+.select-card_form{
+	display: flex;
+}
+
+.select-card_form label{
+	font-size: 1.5rem;
+	flex: 1;
+}
+
+.win-image{
+	display: none;
+	margin-top: 12vh;
+	width: 100%;
+	height: 500px;
+	background-image: url(../img/win_image.jpg);
+}
+.win-text{
+	padding: 50px;
+	font-size: 3rem;
+	text-align: right;
+}
+.time{
+	font-size: 2.5rem;
+	text-align: center;
+}

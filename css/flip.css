@@ -1,0 +1,52 @@
+.flip {
+	width: 100px;
+	height: 180px;
+	position: relative;
+	display: inline-block;
+	margin: 10px 14px 10px 14px;
+	
+}
+
+.flip .card.flipped {
+	transform: rotatey(-180deg);
+}
+
+.flip .card {
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: 2s;
+}
+
+.flip .card .face {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	backface-visibility: hidden;
+	z-index: 2;
+}
+
+.flip .card .front {
+	position: absolute;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.flip .card .back {
+	transform: rotatey(-180deg);
+	background: yellow;
+    border-radius: 15px;
+	cursor: pointer;
+	width: 100%;
+}
+
+.front img, .back img{
+    box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+    border-radius: 15px;
+}
+
+.front img{
+    border: 3px solid #ead520;
+}
