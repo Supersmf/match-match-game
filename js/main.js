@@ -39,8 +39,8 @@ let addCard = function (back_img) {
 	let back = document.createElement('div');
 	let frontImg = document.createElement('img');
 	let backImg = document.createElement('img');
-	frontImg.setAttribute('src', '../img/cards/skin/' + cardSkin + '.jpg');
-	backImg.setAttribute('src', '../img/cards/' + back_img + '.png');
+	frontImg.setAttribute('src', '../match-match-game/img/cards/skin/' + cardSkin + '.jpg');
+	backImg.setAttribute('src', '../match-match-game/img/cards/' + back_img + '.png');
 	cont.classList.add('flip');
 	card.classList.add('card');
 	front.classList = 'face front';
